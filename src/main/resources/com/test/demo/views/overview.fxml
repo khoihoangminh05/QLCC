@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" alignment="CENTER" spacing="20">
+    <Label text="Tổng Quan Chung Cư" styleClass="content-title">
+        <font>
+            <Font name="Segoe UI" size="24" />
+        </font>
+    </Label>
+
+    <Label text="Số Cư Dân Hiện Tại: 500" styleClass="content-subtitle" />
+    <Label text="Doanh Thu Tháng: 50,000,000 VND" styleClass="content-subtitle" />
+    <Label text="Phí Dịch Vụ Đã Thu: 10,000,000 VND" styleClass="content-subtitle" />
+
+    <Button text="Xem Chi Tiết" styleClass="detail-button" />
+</VBox>

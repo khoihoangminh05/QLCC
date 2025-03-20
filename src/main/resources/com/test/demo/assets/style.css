@@ -1,0 +1,85 @@
+.root {
+    -fx-background-image: url("img/background.jpg");
+    -fx-background-size: cover;
+    -fx-background-position: center;
+}
+.lable, .button, .text-field, .check-box, .hyperlink {
+    -fx-text-fill: white;
+}
+.wrapper {
+    -fx-pref-width: 350px;
+    -fx-pref-height: 400px;
+    
+    -fx-min-width: 350px;
+    -fx-min-height: 400px;
+    
+    -fx-max-width: 350px;
+    -fx-max-height: 400px;
+    
+    -fx-background-color: rgba(255, 255, 255, 0.1); /* Nền trong suốt */
+    -fx-background-radius: 20px;
+    -fx-padding: 20px;
+    -fx-spacing: 15px;
+    -fx-text-fill: white;
+}
+
+.title {
+    -fx-font-size: 24px;
+    -fx-font-weight: bold;
+    -fx-text-fill: white;
+}
+.input-field {
+    -fx-background-color: transparent; /* Xóa nền input-field */
+    -fx-border-color: rgba(255, 255, 255, 0.2); /* Viền trắng mờ */
+    -fx-border-width: 1px; /* Viền mỏng hơn *//* Độ dày viền */
+    -fx-border-radius: 25px; /* Bo góc tròn */
+    -fx-padding: 5px 15px; /* Giữ khoảng cách bên trong */
+    -fx-spacing: 10px; /* Khoảng cách giữa TextField và icon */
+    -fx-alignment: center-left;
+}
+
+.input-field TextField, .input-field PasswordField {
+    -fx-background-color: transparent; /* Xóa nền TextField */
+    -fx-border-width: 0; /* Không có viền riêng */
+    -fx-text-fill: white; /* Màu chữ trắng */
+    -fx-font-size: 14px;
+}
+
+.input-field TextField:focused, .input-field PasswordField:focused {
+    -fx-background-color: transparent;
+}
+
+.input-field ImageView {
+    -fx-opacity: 0.8;
+    -fx-translate-x: 50px;
+}
+
+
+.login-button {
+    -fx-background-color: white;
+    -fx-text-fill: #6a1b9a; /* Màu chữ tím */
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-pref-width: 100%; /* Chiếm toàn bộ chiều rộng của container */
+    -fx-min-width: 200px; /* Đảm bảo không quá nhỏ */
+    -fx-max-width: 300px; /* Không quá dài */
+    -fx-padding: 10px 0;
+    -fx-border-radius: 25px;
+    -fx-background-radius: 25px;
+    -fx-alignment: center;
+}
+
+.login-button:hover {
+    -fx-background-color: #f1e5ff;
+}
+
+.check-remember {
+    -fx-text-fill: white;
+    -fx-font-size: 12px;
+}
+
+.hyperlink {
+    -fx-text-fill: white;
+    -fx-underline: true;
+    -fx-font-size: 12px;
+}

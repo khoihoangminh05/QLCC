@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane fx:id="mainBorderPane" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.test.demo.controllers.DashBoardController">
+    <top>
+        <HBox styleClass="header"> 
+        <Label styleClass="header-title" text="Quản Lý Chung Cư" />
+         <Pane HBox.hgrow="ALWAYS" />
+         <HBox prefHeight="30.0" prefWidth="200.0" styleClass="search-box">
+            <children>
+               <TextField fx:id="searchField" promptText="Tìm kiếm..." styleClass="search-field" />
+               <ImageView fitHeight="26.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" styleClass="search-icon">
+                  <image>
+                     <Image url="@../assets/img/find.png" />
+                  </image>
+               </ImageView>
+            </children>
+         </HBox>
+           
+            
+            
+            <Button fx:id="logoutButton" onAction="#handleLogout" styleClass="logout-button" text="Đăng Xuất" />
+        </HBox>
+    </top>
+    <left>
+        <VBox styleClass="sidebar">
+            <Label styleClass="sidebar-title" text="DASHBOARD" />
+            <Button fx:id="overviewButton" onAction="#handleOverviewButton" styleClass="sidebar-button" text="Tổng Quan" />
+            <Button fx:id="accountButton" onAction="#handleAccountButton" styleClass="sidebar-button" text="Quản Lý Tài khoản" />
+            <Button styleClass="sidebar-button" text="Quản Lý Phí" />
+            <Button styleClass="sidebar-button" text="Báo Cáo" />
+            <Button styleClass="sidebar-button" text="Hồ Sơ" />
+            <Button styleClass="sidebar-button" text="Thống Kê" />
+
+            <Separator styleClass="separator" />
+
+            <Label styleClass="sidebar-title" text="EXTRAS" />
+            <Button styleClass="sidebar-button" text="Tài Nguyên" />
+            <Button styleClass="sidebar-button" text="Hỗ Trợ" />
+            <Button styleClass="sidebar-button" text="Về Chúng Tôi" />
+
+            <Separator styleClass="separator" />
+
+            <Label styleClass="sidebar-title" text="TÀI KHOẢN" />
+            <Button styleClass="sidebar-button" text="Cài Đặt Tài Khoản" />
+            <Button styleClass="sidebar-button" text="Tạm Dừng" />
+            <Button styleClass="sidebar-button" text="Đặt Lại Tuần" />
+        </VBox>
+    </left>
+    <center>
+        <VBox styleClass="content">
+            <Label styleClass="content-title" text="XIN CHÀO, QUẢN TRỊ VIÊN" />
+            <Label styleClass="content-subtitle" text="Bạn đang ở trong chế độ Quản Lý Chung Cư" />
+
+            <HBox styleClass="stats">
+                <VBox styleClass="stat-box">
+                    <Label styleClass="stat-title" text="Số Cư Dân" />
+                    <Label styleClass="stat-value" text="500" />
+                </VBox>
+                <VBox styleClass="stat-box">
+                    <Label styleClass="stat-title" text="Doanh Thu Tháng" />
+                    <Label styleClass="stat-value" text="50,000,000 VND" />
+                </VBox>
+                <VBox styleClass="stat-box">
+                    <Label styleClass="stat-title" text="Phí Dịch Vụ" />
+                    <Label styleClass="stat-value" text="10,000,000 VND" />
+                </VBox>
+            </HBox>
+
+            <Label styleClass="section-title" text="THỐNG KÊ" />
+            <HBox styleClass="charts">
+                <!-- Charts can be added here -->
+            </HBox>
+        </VBox>
+    </center>
+</BorderPane>

@@ -1,0 +1,89 @@
+/* Content */
+.content {
+	 -fx-border-size: 3px;
+     -fx-padding: 0px; 
+    -fx-spacing: 20px;
+}
+
+.content-title {
+    -fx-text-fill: #2c3e50;
+    -fx-font-size: 28px;
+    -fx-font-weight: bold;
+}
+
+.content-subtitle {
+    -fx-text-fill: #7f8c8d;
+    -fx-font-size: 18px;
+}
+
+/* Stats */
+.stats {
+    -fx-spacing: 20px;
+}
+
+.stat-box {
+    -fx-background-color: white;
+    -fx-padding: 20px;
+    -fx-spacing: 10px;
+    -fx-border-radius: 10px;
+    -fx-background-radius: 10px;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.1), 10, 0, 0, 0);
+}
+
+.stat-title {
+    -fx-text-fill: #7f8c8d;
+    -fx-font-size: 16px;
+}
+
+.stat-value {
+    -fx-text-fill: #2c3e50;
+    -fx-font-size: 15px;
+    -fx-font-weight: bold;
+}
+
+.dashed-separator {
+    -fx-border-style: dashed;
+    -fx-border-width: 0.5; /* Độ dày nhỏ hơn */
+    -fx-border-color: #ccc;
+}
+
+/* Section Title */
+.section-title {
+    -fx-text-fill: #2c3e50;
+    -fx-font-size: 22px;
+    -fx-font-weight: bold;
+    -fx-padding: 10px 0;
+}
+
+/* Style cho VBox chứa Icon */
+#vboxIcon {
+    -fx-width: 100%;
+    -fx-height: 300px;
+    -fx-background-color: rgba(255, 255, 255, 0.2);
+    -fx-border-color: rgba(0, 0, 0, 0.3);
+    -fx-border-width: 2px;
+    -fx-border-style: dashed;
+}
+
+/* Style cho Button Icon */
+.icon-button {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+}
+
+.icon-button:hover {
+    -fx-scale-x: 1.1;
+    -fx-scale-y: 1.1;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 255, 0.5), 10, 0.3, 0, 0);
+}
+
+
+/* Charts */
+.charts {
+    -fx-spacing: 20px;
+    -fx-padding: 20px;
+    -fx-background-color: white;
+    -fx-border-radius: 10px;
+    -fx-background-radius: 10px;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.1), 10, 0, 0, 0);
+}
